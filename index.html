@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+<style>
+
+* {font-family: 'Jua', sans-serif;}
+#logbut, #inpbut{
+  border-radius: 40px;
+  color:white;
+  background-color: #3bc1d2;
+}
+#logbut2{
+  border-radius: 40px;
+  color:white;
+  background-color: darkgray;
+}
+.i1, .i2{
+  position: relative; top: 75px;
+}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="w3-bar-item w3-button"> <img src="lo.JPG" width=100px>  </a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small" style="margin-top:1px">
+      <a href="#about" class="w3-bar-item w3-button">큐브소개</a>
+      <a href="#function" class="w3-bar-item w3-button">기능안내</a>
+      <a href="#pay" class="w3-bar-item w3-button">요금안내</a>
+      <a href="#inquire" class="w3-bar-item w3-button">도입문의</a>
+      <a href="#login" id="logbut" class="w3-bar-item w3-button" > <b> 로그인 </b> </a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">큐브소개 </a>
+  <a href="#function" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">기능안내</a>
+  <a href="#pay" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">요금안내</a>
+  <a href="#inquire" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">도입문의</a>
+  <a href="#login" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">로그인</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" id= "home" style="max-width:3200px; height: 100%">
+
+  <!-- Automatic Slideshow Images -->
+<header class="w3-display-container w3-wide w3-center" id="home">
+  <img class="w3-image" src="main_image.jpg" alt="Architecture" style="filter: opacity(70%); height:120%">
+  <div class="w3-display-middle " style="margin-left:15%">
+    <div class="w3-hide-small w3-left-align">
+    <h1 class="w3-hide-small " style="color:orange; text-align:left; font-family: 'Jua', sans-serif;"  >워라밸 : 워크 앤 라이프 밸런스<h1>
+    <h6 class="w3-hide-small " style="color:white; text-align:left; font-family: 'Jua', sans-serif;" > 진정한 행복은 일과 여가의 균형에서 찾을 수 있습니다. </h6>
+    <h6 class="w3-hide-small " style="color:white; text-align:left;font-family: 'Jua', sans-serif;" > 큐브는 당신의 워라밸 라이프를 응원합니다. </h6>
+    <h6 class="w3-hide-small " style="color:white; text-align:left;font-family: 'Jua', sans-serif;" > 워라밸을 위한 첫걸음, 큐브에서 시작하세요! </h6>
+    <br> <br>
+    <input type="text" name="Email"  placeholder=" Email을 입력하세요" style="border-radius:40px; float:left margin-top:15px">
+    <input type="button" id="inpbut" class="w3-button" value="회원가입하기" style="margin:10px;"> </br>
+    <h6 class="w3-text-black w3-small w3-hide-small"> 이미 회원이신가요? <a style="color:orange"; href="#login"> 로그인 </a> </h6>
+  </div>
+
+  </div>
+</header>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1000px" id="band">
+    <h1 class="w3-wide"> <span style="color:orange;font-size:48px"> 협업</span>하면 생산성 <span style="color:orange;font-size:48px">37.7% </span>높아집니다</h1>
+    <p class="w3-opacity">“50년간 발표된 논문 1,790,000편을 분석한 결과, 팀으로 협업하는 연구자들이 단독 연구자 보다 새로운 아이디어를 발표할 확률이 37.7% 높았습니다.”</p>
+    <br>
+    <img class="w3-center" src="cowork.jpg" style="width:50%"> <br> <br> <br>
+
+    <input type="button" id="inpbut" class="w3-button w3-wide" value="협업의 중요성 더 알아보기" style=" min-width:200px; margin-left:10px; background-color:white color:#3bc1d2; border: 1px solid #3bc1d2; padding:15px;"> </br>
+  </div>
+  <br>
+
+
+  <div class="w3-container w3-content w3-center i1" style="max-width:1000px">
+    <img  class="w3-center"  src="tool.jpg">
+  </div>
+
+  <!-- The Tour Section -->
+  <div style="background-color:#f0f0f0 " id="tour" class="w3-center" style="margin-bottom:50px">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
+      <h1 class="w3-wide w3-center"> <b> 수평적 기업문화를 위한 최적의 협업툴 </b> </h2> <br> <br> <br> <br>
+      <p class="w3-center"> 4차산업혁명 시대에는 기업의 생산성 향상을 위한 한국 기업문화의 변화를 요구하고 있습니다. </p>
+      <p class="w3-center"> 기존 리더 중심의 수직적 의사결정 구조에서 벗어나 개인의 창의성을 중시하는 수평적 구조로의 변화가 필요합니다. </p>
+      <p class="w3-center"> 그러나 준비가 안된 상태에서의 너무 빠른 변화는 오히려 의견충돌, 생산성 저해 등 다양한 부작용이 우려됩니다. </p>
+      <p class="w3-center"> 큐브는 패러다임의 변화에 의한 부작용을 최소화하고, 자연스러우면서 점진적인 변화 방법을 제시합니다. </p> <br> <br> <br>
+
+      <input type="button" id="inpbut" class="w3-button w3-wide" value="수평적 기업문화 더 알아보기" style=" margin-left:10px; background-color:white color:#3bc1d2; border: 1px solid #3bc1d2; padding:15px;"> </br>
+    </div>
+                <div class="w3-container w3-content w3-center i2" style="max-width:1000px">
+                  <img  class="w3-center"  src="tool2.jpg">
+                </div>
+  </div>
+
+
+  <!-- Ticket Modal -->
+  <div style=  id="tour" class="w3-center" style="margin-bottom:50px">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1800px">
+      <h1 class="w3-wide w3-center"> <b> 사용이 간단한 <span style="color:orange;font-size:48px"> 모바일 최적화 협업툴 </span> </b> </h2> <br>
+      <p class="w3-center"> 현재 출시된 대다수의 협업툴은 모바일 기기에 최적화되어 있지 않습니다. </p>
+      <p class="w3-center"> 큐브는 모바일에서도 협업에 필요한 모든 기능을 손쉽게 사용할 수 있도록 설계하였습니다. </p>
+      <p class="w3-center"> 특히 정보 입력 및 공유가 신속, 간단하게 실행될 수 있도록 반응형 앱 구현기술을 적용하였습니다. </p> <br> <br> <br>
+      <input type="button" id="inpbut" class="w3-button w3-wide" value="큐브의 놀라운 기능 더 알아보기" style="min-width:200px; margin-left:10px; background-color:white color:#3bc1d2; border: 1px solid #3bc1d2; padding:15px;"> </br>
+    </div>
+  </div>
+  <br><br>
+
+
+  <div style="background-color:#3bc1d2 " id="tour" class="w3-center" style="margin-bottom:50px">
+    <br><br>
+    <h1 style="color:white; text-align:center; font-size: 60px"> 지금 무료로 이용하세요! </h1>
+    <input type="text" name="Email"  placeholder=" Email을 입력하세요" style= "border-radius:40px; float:left margin-top:15px">
+    <input type="button" class="w3-button" id="logbut2" value="회원가입하기" style="margin:10px;"> <br><br><br>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:1000px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Seoul, Korea<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 02 - 573 - 0030<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: sales@crinity.com<br>
+        <i class="fa fa-fax" style="width:30px"> </i> Fax: 02 - 573 - 0235<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Jo Jae Hun</a></p>
+</footer>
+</div>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+</body>
+</html>
